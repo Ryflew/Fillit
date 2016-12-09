@@ -6,7 +6,7 @@
 #    By: vdarmaya <vdarmaya@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/15 15:29:54 by vdarmaya          #+#    #+#              #
-#    Updated: 2016/12/08 06:06:40 by vdarmaya         ###   ########.fr        #
+#    Updated: 2016/12/09 03:20:37 by vdarmaya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ all: $(NAME)
 
 $(NAME):
 	@make -C $(LIBDIR)
-	@gcc $(FLAGS) $(SRCS) -o $(NAME) -L $(LIBDIR) -l ft -g
+	@gcc $(FLAGS) $(SRCS) -o $(NAME) -L $(LIBDIR) -l ft
 	@echo "Fillit - Compilation Done"
 
 clean:
